@@ -1,8 +1,8 @@
 import requests
-from config import Yandex_api
+from config import Yandex_api, yandex_token2
 def AI(system):
     prompt = {
-        "modelUri": "gpt://b1g1ubm7oit2cl48keii/yandexgpt-lite",
+        "modelUri": f"gpt://{yandex_token2}/yandexgpt-lite",
         "completionOptions": {
             "stream": False,
             "temperature": 0.6,
